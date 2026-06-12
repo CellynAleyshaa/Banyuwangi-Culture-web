@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musik Patrol - Banyuwangi Osing Culture Archive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/darkmode.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body class="light-mode">
+    <div id="loading-screen">
+        <div class="loading-content">
+            <h1 class="loading-title">Banyuwangi Osing</h1>
+            <p class="loading-subtitle">Culture Archive</p>
+            <div class="loading-bar"><div class="loading-progress"></div></div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-text">BANYUWANGI</span>
+                <span class="logo-subtext">Osing Culture Archive</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Beranda</a>
+                <a href="../index.html#about" class="nav-link">Tentang</a>
+                <a href="../index.html#categories" class="nav-link">Kategori</a>
+                <a href="../index.html#culture" class="nav-link">Budaya</a>
+            </div>
+            <div class="nav-actions">
+                <button class="search-toggle" id="search-toggle"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg></button>
+                <button class="theme-toggle" id="theme-toggle">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-container">
+            <input type="text" class="search-input" id="search-input" placeholder="Cari budaya...">
+            <button class="search-close" id="search-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+        </div>
+        <div class="search-results" id="search-results"></div>
+    </div>
+
+    <header class="page-header">
+        <div class="page-header-bg" style="background-image: url('../assets/img/musik-patrol-1.jpeg');"></div>
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content reveal-fade-up">
+            <h1>Musik Patrol</h1>
+            <p>Kesenian musik tradisional dari kentongan bambu yang lahir dari kegiatan ronda malam</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="../index.html">Beranda</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="../index.html#osing">Budaya Osing</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>Musik Patrol</span>
+        </nav>
+    </div>
+
+    <main class="content-wrapper">
+        <section class="content-section reveal-fade-up">
+            <h2>📜 Sejarah</h2>
+            <p>Musik Patrol merupakan kesenian tradisional yang berkembang di Banyuwangi dan beberapa daerah di Jawa Timur. Awalnya, musik ini digunakan oleh masyarakat saat <strong>ronda malam (patroli)</strong> sebagai alat komunikasi dan penjaga keamanan lingkungan.</p>
+            <p>Suara kentongan yang dipukul dengan irama tertentu berfungsi sebagai kode atau sinyal antarwarga jika ada bahaya atau gangguan keamanan di malam hari.</p>
+            <p>Seiring perkembangan zaman, Musik Patrol berubah fungsi dari sekadar alat keamanan menjadi seni pertunjukan yang sering ditampilkan dalam festival budaya, lomba, dan acara masyarakat Banyuwangi.</p>
+        </section>
+
+        <section class="content-section reveal-fade-up">
+            <h2>💭 Makna Filosofis</h2>
+            <p>Musik Patrol melambangkan kebersamaan, gotong royong, dan persatuan masyarakat. Permainan musik yang dilakukan secara berkelompok menunjukkan pentingnya kerja sama, kekompakan, dan rasa peduli terhadap sesama.</p>
+            
+            <div class="info-box">
+                <h4>🤝 Kebersamaan dan Gotong Royong</h4>
+                <p style="margin:0">Irama yang dihasilkan hanya bisa terdengar indah jika dimainkan secara kompak oleh seluruh anggota kelompok, mencerminkan pentingnya persatuan.</p>
+            </div>
+
+            <div class="info-box">
+                <h4>️ Rasa Saling Menjaga</h4>
+                <p style="margin:0">Akar sejarahnya dari kegiatan ronda malam mengajarkan nilai kepedulian dan tanggung jawab warga terhadap keamanan lingkungan bersama.</p>
+            </div>
+
+            <div class="info-box">
+                <h4>🎨 Kreativitas dari Kesederhanaan</h4>
+                <p style="margin:0">Menciptakan musik yang meriah dan kompleks hanya dari bahan bambu sederhana menunjukkan betapa tingginya kreativitas masyarakat Banyuwangi.</p>
+            </div>
+        </section>
+
+        <section class="content-section reveal-fade-up">
+            <h2>🎭 Prosesi Pertunjukan</h2>
+            <p>Musik Patrol dimainkan secara berkelompok menggunakan kentongan bambu sebagai alat utama. Pertunjukan biasanya diiringi alat musik lain seperti kendang, gong, dan kempul.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>1. Pembentukan Kelompok</h4>
+                    <p>Musik Patrol dimainkan secara berkelompok, biasanya terdiri dari 10-20 orang atau lebih, tergantung ukuran kentongan dan kompleksitas irama.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2. Penyusunan Irama</h4>
+                    <p>Para pemain memainkan irama yang kompak dan energik. Setiap kentongan memiliki nada yang berbeda-beda sesuai ukuran dan ketebalan bambu.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>3. Pertunjukan</h4>
+                    <p>Pertunjukan sering dilakukan sambil berjalan (parade) atau di atas panggung. Suasana yang diciptakan sangat meriah dan menghibur.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section reveal-fade-up">
+            <h2> Alat Musik yang Digunakan</h2>
+            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                <li><strong>Kentongan bambu:</strong> Alat utama dengan berbagai ukuran untuk menghasilkan nada berbeda.</li>
+                <li><strong>Kendang:</strong> Pengatur tempo dan ritme utama.</li>
+                <li><strong>Gong & Kempul:</strong> Memberikan aksen dan penegas ketukan.</li>
+                <li><strong>Tamborin:</strong> Menambah variasi ritme dan kemeriahan.</li>
+            </ul>
+        </section>
+
+        <section class="content-section reveal-fade-up">
+            <h2>✨ Fakta Menarik</h2>
+            <div class="fact-card">
+                <div class="fact-icon">🌙</div>
+                <div class="fact-content">
+                    <h4>Berawal dari Ronda Malam</h4>
+                    <p>Fungsi awalnya sangat praktis, yaitu sebagai alat komunikasi dan penjaga keamanan lingkungan saat malam hari.</p>
+                </div>
+            </div>
+            <div class="fact-card">
+                <div class="fact-icon">🌅</div>
+                <div class="fact-content">
+                    <h4>Pembangun Sahur</h4>
+                    <p>Dahulu, Musik Patrol juga digunakan untuk membangunkan warga saat sahur di bulan Ramadhan dengan keliling desa.</p>
+                </div>
+            </div>
+            <div class="fact-card">
+                <div class="fact-icon">🎋</div>
+                <div class="fact-content">
+                    <h4>Bahan Utama Bambu</h4>
+                    <p>Alat musik utamanya terbuat dari bambu yang dipotong dan diukir sedemikian rupa untuk menghasilkan nada yang pas.</p>
+                </div>
+            </div>
+            <div class="fact-card">
+                <div class="fact-icon"></div>
+                <div class="fact-content">
+                    <h4>Sering Dilombakan</h4>
+                    <p>Musik Patrol sering diperlombakan dalam festival budaya, baik tingkat desa, kabupaten, hingga provinsi.</p>
+                </div>
+            </div>
+            <div class="fact-card">
+                <div class="fact-icon">🌟</div>
+                <div class="fact-content">
+                    <h4>Kesenian Khas Banyuwangi</h4>
+                    <p>Meski ada di beberapa daerah Jawa Timur, Musik Patrol menjadi salah satu kesenian khas yang sangat identik dengan Banyuwangi.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section reveal-fade-up">
+            <h2>📸 Galeri</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="../assets/img/musik-patrol-1.jpeg" alt="Musik Patrol 1"></div>
+                <div class="gallery-item"><img src="../assets/img/musik-patrol-2.jpeg" alt="Musik Patrol 2"></div>
+                <div class="gallery-item"><img src="../assets/img/musik-patrol-3.jpeg" alt="Musik Patrol 3"></div>
+                <div class="gallery-item"><img src="../assets/img/musik-patrol-4.jpeg" alt="Musik Patrol 4"></div>
+                <div class="gallery-item"><img src="../assets/img/musik-patrol-5.jpeg" alt="Musik Patrol 5"></div>
+            </div>
+        </section>
+
+        <section class="content-section reveal-fade-up">
+            <h2>🔗 Budaya Terkait</h2>
+            <div class="related-grid">
+                <a href="angklung-caruk.html" class="related-card">
+                    <div class="related-image"><img src="../assets/img/angklung-caruk-1.jpeg" alt="Angklung Caruk"></div>
+                    <div class="related-content"><h4>Angklung Caruk</h4></div>
+                </a>
+                <a href="kendang-kempul.html" class="related-card">
+                    <div class="related-image"><img src="../assets/img/kendang-kempul-1.jpeg" alt="Kendang Kempul"></div>
+                    <div class="related-content"><h4>Kendang Kempul</h4></div>
+                </a>
+                <a href="upacara-adat-osing.html" class="related-card">
+                    <div class="related-image"><img src="../assets/img/upacara-adat-1.jpeg" alt="Upacara Adat Osing"></div>
+                    <div class="related-content"><h4>Upacara Adat Osing</h4></div>
+                </a>
+            </div>
+        </section>
+
+        <nav class="page-navigation">
+            <a href="rumah-adat-osing.html" class="nav-previous">
+                <div class="nav-label">← Sebelumnya</div>
+                <div class="nav-title">Rumah Adat Osing</div>
+            </a>
+            <a href="upacara-adat-osing.html" class="nav-next">
+                <div class="nav-label">Selanjutnya →</div>
+                <div class="nav-title">Upacara Adat Osing</div>
+            </a>
+        </nav>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; margin-top: 2rem;">
+                <p>&copy; 2024 Banyuwangi Osing Culture Archive</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
+
+    <div class="modal-gallery" id="gallery-modal">
+        <button class="modal-close" id="modal-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+        <button class="modal-nav modal-prev" id="modal-prev"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+        <button class="modal-nav modal-next" id="modal-next"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+        <img src="" alt="" class="modal-image" id="modal-image">
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/gallery.js"></script>
+    <script src="../js/darkmode.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+</html>

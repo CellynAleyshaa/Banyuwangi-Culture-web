@@ -1,0 +1,324 @@
+/* ============================================
+   SCROLL ANIMATIONS & REVEALS
+   ============================================ */
+
+/* === REVEAL ANIMATIONS === */
+.reveal-fade-up,
+.reveal-fade-down,
+.reveal-fade-left,
+.reveal-fade-right,
+.reveal-zoom-in {
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal-fade-up {
+    transform: translateY(50px);
+}
+
+.reveal-fade-down {
+    transform: translateY(-50px);
+}
+
+.reveal-fade-left {
+    transform: translateX(-50px);
+}
+
+.reveal-fade-right {
+    transform: translateX(50px);
+}
+
+.reveal-zoom-in {
+    transform: scale(0.8);
+}
+
+.reveal-fade-up.active,
+.reveal-fade-down.active,
+.reveal-fade-left.active,
+.reveal-fade-right.active,
+.reveal-zoom-in.active {
+    opacity: 1;
+    transform: translate(0) scale(1);
+}
+
+/* === STAGGER DELAYS === */
+.reveal-fade-up[data-delay="100"],
+.reveal-fade-down[data-delay="100"],
+.reveal-fade-left[data-delay="100"],
+.reveal-fade-right[data-delay="100"],
+.reveal-zoom-in[data-delay="100"] {
+    transition-delay: 0.1s;
+}
+
+.reveal-fade-up[data-delay="200"],
+.reveal-fade-down[data-delay="200"],
+.reveal-fade-left[data-delay="200"],
+.reveal-fade-right[data-delay="200"],
+.reveal-zoom-in[data-delay="200"] {
+    transition-delay: 0.2s;
+}
+
+.reveal-fade-up[data-delay="300"],
+.reveal-fade-down[data-delay="300"],
+.reveal-fade-left[data-delay="300"],
+.reveal-fade-right[data-delay="300"],
+.reveal-zoom-in[data-delay="300"] {
+    transition-delay: 0.3s;
+}
+
+.reveal-fade-up[data-delay="400"],
+.reveal-fade-down[data-delay="400"],
+.reveal-fade-left[data-delay="400"],
+.reveal-fade-right[data-delay="400"],
+.reveal-zoom-in[data-delay="400"] {
+    transition-delay: 0.4s;
+}
+
+.reveal-fade-up[data-delay="500"],
+.reveal-fade-down[data-delay="500"],
+.reveal-fade-left[data-delay="500"],
+.reveal-fade-right[data-delay="500"],
+.reveal-zoom-in[data-delay="500"] {
+    transition-delay: 0.5s;
+}
+
+/* === HOVER EFFECTS === */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+.hover-rotate {
+    transition: transform 0.3s ease;
+}
+
+.hover-rotate:hover {
+    transform: rotate(3deg);
+}
+
+/* === PARALLAX EFFECTS === */
+.parallax {
+    will-change: transform;
+}
+
+.parallax-slow {
+    animation: parallaxSlow 20s ease-in-out infinite;
+}
+
+.parallax-medium {
+    animation: parallaxMedium 15s ease-in-out infinite;
+}
+
+.parallax-fast {
+    animation: parallaxFast 10s ease-in-out infinite;
+}
+
+@keyframes parallaxSlow {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.05);
+    }
+}
+
+@keyframes parallaxMedium {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-30px) scale(1.08);
+    }
+}
+
+@keyframes parallaxFast {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-40px) scale(1.1);
+    }
+}
+
+/* === LOADING ANIMATIONS === */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.loading-shimmer {
+    background: linear-gradient(
+        90deg,
+        var(--color-bg-tertiary) 0%,
+        var(--color-bg-secondary) 50%,
+        var(--color-bg-tertiary) 100%
+    );
+    background-size: 1000px 100%;
+    animation: shimmer 2s infinite;
+}
+
+/* === PULSE ANIMATION === */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
+}
+
+.pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* === SPINNER === */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--color-border);
+    border-top-color: var(--color-accent-primary);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+/* === FADE IN === */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease;
+}
+
+/* === SLIDE IN === */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-right {
+    animation: slideInRight 0.5s ease;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.5s ease;
+}
+
+/* === ZOOM FADE === */
+@keyframes zoomFadeIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.zoom-fade-in {
+    animation: zoomFadeIn 0.5s ease;
+}
+
+/* === FLOATING ANIMATION === */
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    33% {
+        transform: translateY(-10px);
+    }
+    66% {
+        transform: translateY(-5px);
+    }
+}
+
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
+/* === GLITCH EFFECT === */
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.glitch:hover {
+    animation: glitch 0.3s ease;
+}
+
+/* === GLOW EFFECT === */
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(212, 175, 55, 0.6);
+    }
+}
+
+.glow {
+    animation: glow 2s ease-in-out infinite;
+}

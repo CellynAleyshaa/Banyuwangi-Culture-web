@@ -1,0 +1,76 @@
+/* ============================================
+   DARK MODE STYLES
+   ============================================ */
+
+body.dark-mode {
+    /* Colors - Dark Mode */
+    --color-bg-primary: #0F172A;
+    --color-bg-secondary: #1E293B;
+    --color-bg-tertiary: #334155;
+    
+    --color-text-primary: #F1F5F9;
+    --color-text-secondary: #94A3B8;
+    --color-text-tertiary: #64748B;
+    
+    --color-accent-primary: #F4D03F;
+    --color-accent-secondary: #F7DC6F;
+    --color-accent-tertiary: #D4AC0D;
+    
+    --color-border: rgba(255, 255, 255, 0.1);
+    --color-shadow: rgba(0, 0, 0, 0.3);
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.5);
+    --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .navbar.scrolled {
+    background: rgba(15, 23, 42, 0.95);
+}
+
+body.dark-mode .hero-overlay {
+    background: linear-gradient(180deg, 
+        rgba(15, 23, 42, 0.3) 0%, 
+        rgba(15, 23, 42, 0.8) 50%,
+        var(--color-bg-primary) 100%);
+}
+
+body.dark-mode .glass-card {
+    background: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .culture-badge {
+    background: rgba(30, 41, 59, 0.95);
+}
+
+body.dark-mode .search-input {
+    background: var(--color-bg-secondary);
+    box-shadow: 0 0 0 1px var(--color-border);
+}
+
+body.dark-mode .audio-player {
+    background: rgba(30, 41, 59, 0.98);
+}
+
+body.dark-mode .modal-gallery {
+    background: rgba(15, 23, 42, 0.98);
+}
+
+/* Smooth transition for theme switch */
+body,
+body * {
+    transition: background-color 0.3s ease, 
+                color 0.3s ease, 
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Exclude images and videos from transition */
+body img,
+body video,
+body iframe {
+    transition: none;
+}

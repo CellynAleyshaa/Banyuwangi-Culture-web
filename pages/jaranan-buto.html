@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaranan Buto - Banyuwangi Osing Culture Archive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/darkmode.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body class="light-mode">
+    <div id="loading-screen">
+        <div class="loading-content">
+            <h1 class="loading-title">Banyuwangi Osing</h1>
+            <p class="loading-subtitle">Culture Archive</p>
+            <div class="loading-bar"><div class="loading-progress"></div></div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-text">BANYUWANGI</span>
+                <span class="logo-subtext">Osing Culture Archive</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Beranda</a>
+                <a href="../index.html#about" class="nav-link">Tentang</a>
+                <a href="../index.html#categories" class="nav-link">Kategori</a>
+                <a href="../index.html#culture" class="nav-link">Budaya</a>
+            </div>
+            <div class="nav-actions">
+                <button class="search-toggle" id="search-toggle"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg></button>
+                <button class="theme-toggle" id="theme-toggle">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-container">
+            <input type="text" class="search-input" id="search-input" placeholder="Cari budaya...">
+            <button class="search-close" id="search-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+        </div>
+        <div class="search-results" id="search-results"></div>
+    </div>
+
+    <header class="page-header">
+        <div class="page-header-bg" style="background-image: url('../assets/img/jaranan-buto-4.jpeg');"></div>
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content reveal-fade-up">
+            <h1>Jaranan Buto</h1>
+            <p>Kesenian tari tradisional khas Banyuwangi dengan kuda kepang berbentuk raksasa</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="../index.html">Beranda</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="../index.html#culture">Budaya</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>Jaranan Buto</span>
+        </nav>
+    </div>
+
+    <main class="content-wrapper">
+        <section class="content-section reveal-fade-up">
+            <h2>📜 Sejarah</h2>
+            <p>Jaranan Buto merupakan kesenian tari tradisional khas Banyuwangi yang berasal dari Dusun Cemetuk, Kecamatan Cluring. Kesenian ini berkembang sekitar tahun 1960-an sebagai hasil perpaduan budaya Osing Banyuwangi dan budaya Jawa Mataraman.</p>
+            <p>Nama "Jaranan" berasal dari properti kuda kepang yang digunakan dalam pertunjukan, sedangkan "Buto" berarti raksasa. Hal ini terlihat dari bentuk kuda kepang yang berukuran besar dan menyerupai sosok raksasa.</p>
+            <p>Hingga saat ini, Jaranan Buto masih dilestarikan dan sering ditampilkan dalam berbagai festival budaya maupun acara masyarakat Banyuwangi.</p>
+        </section>
+
+        <section class="content-section reveal-fade-up">
+            <h2>💭 Makna Filosofis</h2>
+            <p>Jaranan Buto mengandung nilai-nilai kehidupan yang penting bagi masyarakat. Kesenian ini melambangkan keberanian, kekuatan, kerja keras, dan semangat pantang menyerah.</p>
+            
+            <div class="info-box">
+                <h4>💪 Keberanian dan Kekuatan</h4>
+                <p style="margin:0">Sosok "buto" atau raksasa menggambarkan berbagai tantangan yang dihadapi manusia dalam kehidupan.</p>
+            </div>
+
+            <div class="info-box">
+                <h4>🎯 Semangat Pantang Menyerah</h4>
+                <p style="margin:0">Melalui pertunjukan ini, masyarakat diajarkan untuk berani menghadapi kesulitan, menjaga persatuan, dan tetap teguh dalam mencapai tujuan.</p>
+            </div>
+
+            <div class="info-box">
+                <h4>🤝 Persatuan dan Kesatuan</h4>
+                <p style="margin:0">Pertunjukan yang dilakukan secara berkelompok mengajarkan pentingnya kerja sama dan kebersamaan dalam menghadapi berbagai tantangan.</p>
+            </div>
+        </section>
+
+        <section class="content-section reveal-fade-up">
+            <h2>🎭 Prosesi Pertunjukan</h2>
+            <p>Pertunjukan Jaranan Buto biasanya diawali dengan persiapan para penari dan pemain musik tradisional.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>1. Persiapan</h4>
+                    <p>Pertunjukan diawali dengan persiapan para penari dan pemain musik tradisional. Alat musik seperti kendang, gong, kempul, bonang, dan terompet dimainkan untuk mengiringi pertunjukan.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2. Masuk ke Arena</h4>
+                    <p>Para penari memasuki arena sambil membawa kuda kepang berbentuk raksasa dengan penuh semangat dan energi.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>3. Pertunjukan Tari</h4>
+                    <p>Tarian dilakukan dengan gerakan yang energik, gagah, dan mengikuti irama musik yang dinamis. Penari menampilkan berbagai gerakan yang menunjukkan kekuatan dan keberanian.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>4. Atraksi Khusus</h4>
+                    <p>Dalam beberapa pertunjukan, terdapat atraksi khusus yang membuat suasana semakin meriah dan menarik perhatian penonton.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section reveal-fade-up">
+            <h2>🎭 Ciri Khas Jaranan Buto</h2>
+            <div class="fact-card">
+                <div class="fact-icon">🐴</div>
+                <div class="fact-content">
+                    <h4>Kuda Kepang Raksasa</h4>
+                    <p>Menggunakan kuda kepang berukuran besar berbentuk raksasa (buto) yang menjadi ciri khas utama.</p>
+                </div>
+            </div>
+            <div class="fact-card">
+                <div class="fact-icon">🎨</div>
+                <div class="fact-content">
+                    <h4>Kostum Mencolok</h4>
+                    <p>Penari memakai kostum berwarna mencolok dan riasan wajah yang khas.</p>
+                </div>
+            </div>
+            <div class="fact-card">
+                <div class="fact-icon">💃</div>
+                <div class="fact-content">
+                    <h4>Gerakan Energik</h4>
+                    <p>Gerakan tari energik, kuat, dan penuh semangat yang memukau penonton.</p>
+                </div>
+            </div>
+            <div class="fact-card">
+                <div class="fact-icon">🎵</div>
+                <div class="fact-content">
+                    <h4>Musik Tradisional</h4>
+                    <p>Diiringi musik tradisional Banyuwangi yang meriah dan dinamis.</p>
+                </div>
+            </div>
+            <div class="fact-card">
+                <div class="fact-icon">🌏</div>
+                <div class="fact-content">
+                    <h4>Perpaduan Budaya</h4>
+                    <p>Memadukan unsur budaya Osing dan Jawa dengan harmonis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section reveal-fade-up">
+            <h2>✨ Fakta Menarik</h2>
+            <div class="fact-card">
+                <div class="fact-icon">📍</div>
+                <div class="fact-content">
+                    <h4>Khas Banyuwangi</h4>
+                    <p>Jaranan Buto merupakan salah satu kesenian yang hanya dapat ditemukan di Banyuwangi.</p>
+                </div>
+            </div>
+            <div class="fact-card">
+                <div class="fact-icon">📏</div>
+                <div class="fact-content">
+                    <h4>Ukuran Besar</h4>
+                    <p>Bentuk kuda kepangnya lebih besar dibandingkan kuda lumping pada umumnya.</p>
+                </div>
+            </div>
+            <div class="fact-card">
+                <div class="fact-icon">🎭</div>
+                <div class="fact-content">
+                    <h4>Karakter Gagah</h4>
+                    <p>Kostum dan riasan penari dibuat menyerupai karakter yang gagah dan berani.</p>
+                </div>
+            </div>
+            <div class="fact-card">
+                <div class="fact-icon">🌟</div>
+                <div class="fact-content">
+                    <h4>Daya Tarik Wisata</h4>
+                    <p>Kesenian ini sering menjadi daya tarik wisata budaya Banyuwangi.</p>
+                </div>
+            </div>
+            <div class="fact-card">
+                <div class="fact-icon">🏆</div>
+                <div class="fact-content">
+                    <h4>Festival Budaya</h4>
+                    <p>Jaranan Buto sering tampil dalam festival budaya tingkat daerah maupun nasional.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section reveal-fade-up">
+            <h2>🎼 Properti dan Alat Musik</h2>
+            
+            <h3>Properti</h3>
+            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                <li>Kuda kepang berbentuk buto (raksasa)</li>
+                <li>Pecut atau cambuk</li>
+                <li>Kostum dan hiasan kepala tradisional</li>
+            </ul>
+
+            <h3>Alat Musik Pengiring</h3>
+            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                <li>Kendang</li>
+                <li>Gong</li>
+                <li>Kempul</li>
+                <li>Bonang</li>
+                <li>Terompet (slompret)</li>
+                <li>Kecer</li>
+            </ul>
+        </section>
+
+        <section class="content-section reveal-fade-up">
+            <h2>📸 Galeri</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="../assets/img/jaranan-buto-1.jpeg" alt="Jaranan Buto 1"></div>
+                <div class="gallery-item"><img src="../assets/img/jaranan-buto-2.jpeg" alt="Jaranan Buto 2"></div>
+                <div class="gallery-item"><img src="../assets/img/jaranan-buto-3.jpeg" alt="Jaranan Buto 3"></div>
+                <div class="gallery-item"><img src="../assets/img/jaranan-buto-4.jpeg" alt="Jaranan Buto 4"></div>
+                <div class="gallery-item"><img src="../assets/img/jaranan-buto-5.jpeg" alt="Jaranan Buto 5"></div>
+            </div>
+        </section>
+
+        <section class="content-section reveal-fade-up">
+            <h2>🔗 Budaya Terkait</h2>
+            <div class="related-grid">
+                <a href="seblang.html" class="related-card">
+                    <div class="related-image"><img src="../assets/img/seblang-1.jpeg" alt="Seblang"></div>
+                    <div class="related-content"><h4>Seblang</h4></div>
+                </a>
+                <a href="barong-using.html" class="related-card">
+                    <div class="related-image"><img src="../assets/img/barong-osing-1.jpeg" alt="Barong Using"></div>
+                    <div class="related-content"><h4>Barong Using</h4></div>
+                </a>
+                <a href="angklung-caruk.html" class="related-card">
+                    <div class="related-image"><img src="../assets/img/angklung-caruk-1.jpeg" alt="Angklung Caruk"></div>
+                    <div class="related-content"><h4>Angklung Caruk</h4></div>
+                </a>
+            </div>
+        </section>
+
+        <nav class="page-navigation">
+            <a href="seblang.html" class="nav-previous">
+                <div class="nav-label">← Sebelumnya</div>
+                <div class="nav-title">Seblang</div>
+            </a>
+            <a href="barong-using.html" class="nav-next">
+                <div class="nav-label">Selanjutnya →</div>
+                <div class="nav-title">Barong Using</div>
+            </a>
+        </nav>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; margin-top: 2rem;">
+                <p>&copy; 2024 Banyuwangi Osing Culture Archive</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
+
+    <div class="modal-gallery" id="gallery-modal">
+        <button class="modal-close" id="modal-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+        <button class="modal-nav modal-prev" id="modal-prev"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+        <button class="modal-nav modal-next" id="modal-next"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+        <img src="" alt="" class="modal-image" id="modal-image">
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/gallery.js"></script>
+    <script src="../js/darkmode.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+</html>
